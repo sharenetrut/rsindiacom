@@ -15,6 +15,10 @@ export default function Document() {
         <NextScript />
         <Script src="/js/jquery-3.4.1.min.js" strategy="beforeInteractive" />
         <Script src="/js/bootstrap.min.js" strategy="beforeInteractive" />
+        <Script src="/js/aos.js" strategy="beforeInteractive" />
+        <Script src="/js/owl.carousel.min.js" strategy="beforeInteractive" />
+        <Script src="/js/select2.min.js" strategy="beforeInteractive" />
+        <Script src="/js/custom.js" strategy="afterInteractive" />
       </body>
     </Html>
   );
