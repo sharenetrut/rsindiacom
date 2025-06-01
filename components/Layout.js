@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import Header from './Header';
 import Footer from './Footer';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function Layout({ children }) {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function Layout({ children }) {
       <Script src="/js/custom.js" strategy="afterInteractive" />
       <Header />
       {children}
+      <SpeedInsights />
       <Footer />
     </>
   );
