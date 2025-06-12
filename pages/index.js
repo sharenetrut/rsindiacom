@@ -406,7 +406,7 @@ export default function Home() {
           </div>
           <div className="row">
             <div className="col-md-4">
-              <div className="clients_box align-self-center">
+              <div className="clients_box">
                 <Image src="/images/world.png" alt="World" width={120} height={80} />
                 <p>Our client base extends across Europe, with partners like SRM AG in Switzerland, Apium AG in Germany, and Krones AG, also in Germany.</p>
               </div>
