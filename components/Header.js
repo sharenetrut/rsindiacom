@@ -8,6 +8,9 @@ export default function Header() {
         <div className="container">
           <Link className="navbar-brand" href="/">
             <Image src="/images/rs-logo.png" alt="Logo" width={299} height={54} style={{height:'auto'}} />
+            <div style={{fontSize: '16px', color: '#333', textAlign: 'center', lineHeight: 1.2, fontWeight: 'bold'}}>
+              RUJ & SRM MECHANICS PRIVATE LIMITED 
+            </div>
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

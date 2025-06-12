@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <Layout>
-      <Head>
+      <Head> 
         <title>RS-INDIA</title>
         <meta name="description" content="RS India - Precision Machining Excellence" />
       </Head>
@@ -131,7 +131,14 @@ export default function Home() {
       <div className="col-md-6 col-lg-6">
         <div className="service-box">
           <div className="card">
-            <Image src="/images/machining.png" className="card-img-top" alt="Machining" width={300} height={400} />
+               <Image
+            src="/images/machining.png"
+            className="card-img-top"
+            alt="Machining"
+            width={300}
+            height={400}
+            style={{ borderRadius: '40px' }} // Adjust the value as needed
+          />
             <div className="card-body">
               <h5 className="card-title">Machining</h5>
               <ul>
@@ -150,11 +157,19 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Card 4 - Assembly */}
+      {/* Card 2 - Assembly */}
       <div className="col-md-6 col-lg-6">
         <div className="service-box">
           <div className="card">
-            <Image src="/images/assembly.png" className="card-img-top" alt="Assembly" width={300} height={200} />
+             <Image
+            src="/images/assembly.png"
+            className="card-img-top"
+            alt="Assembly"
+            width={300}
+            height={400}
+            style={{ borderRadius: '30px' }} // Adjust the value as needed
+          />
+            {/* <Image src="/images/assembly.png" className="card-img-top" alt="Assembly" width={300} height={400} /> */}
             <div className="card-body">
               <h5 className="card-title">Assembly</h5>
               <ul>
@@ -174,13 +189,21 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Bottom Row: Card 2 & Card 3 */}
+    {/* Bottom Row: Card 3 & Card 4 */}
     <div className="row">
-      {/* Card 2 - Fabrication */}
+      {/* Card 3 - Fabrication */}
       <div className="col-md-6 col-lg-6">
         <div className="service-box">
           <div className="card">
-            <Image src="/images/fabrication.png" className="card-img-top" alt="Fabrication" width={300} height={200} />
+            <Image
+            src="/images/fabrication.png"
+            className="card-img-top"
+            alt="Fabrication"
+            width={300}
+            height={400}
+            style={{ borderRadius: '40px' }} // Adjust the value as needed
+          />
+            {/* <Image src="/images/fabrication.png" className="card-img-top" alt="Fabrication" width={300} height={200} /> */}
             <div className="card-body">
               <h5 className="card-title">Fabrication</h5>
               <ul>
@@ -197,11 +220,19 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Card 3 - Surface Treatment */}
+      {/* Card 4 - Surface Treatment */}
       <div className="col-md-6 col-lg-6">
         <div className="service-box">
           <div className="card">
-            <Image src="/images/finishing.png" className="card-img-top" alt="Surface Treatment" width={300} height={200} />
+            <Image
+            src="/images/finishing.png"
+            className="card-img-top"
+            alt="Finishing"
+            width={300}
+            height={400}
+            style={{ borderRadius: '40px' }} // Adjust the value as needed
+          />
+            {/* <Image src="/images/finishing.png" className="card-img-top" alt="Surface Treatment" width={300} height={200} /> */}
             <div className="card-body">
               <h5 className="card-title">Surface Treatment</h5>
               <ul>
@@ -238,7 +269,7 @@ export default function Home() {
               <div className="col-md-3 col-lg-3">
                 <div className="material-card">
                   <div className="card">
-                    <Image src="/images/steel.png" className="card-img-top" alt="Steel" width={300} height={200} />
+                    <Image src="/images/steel.png" className="card-img-top" alt="Steel" width={300} height={100} />
                     <div className="card-body">
                       <h5 className="card-title">Steel Precision<hr /></h5>
                       <p className="card-text">Expertly crafting components from high-grade steel, ensuring uncompromising quality and durability.</p>
@@ -249,7 +280,7 @@ export default function Home() {
               <div className="col-md-3 col-lg-3">
                 <div className="material-card">
                   <div className="card">
-                    <Image src="/images/aluminium.png" className="card-img-top" alt="Aluminum" width={300} height={200} />
+                    <Image src="/images/aluminium.png" className="card-img-top" alt="Aluminum" width={300} height={100} />
                     <div className="card-body">
                       <h5 className="card-title">Aluminum Mastery<hr /></h5>
                       <p className="card-text">Meticulously working with lightweight yet strong aluminum alloys to deliver innovative solutions.</p>
@@ -260,7 +291,7 @@ export default function Home() {
               <div className="col-md-3 col-lg-3">
                 <div className="material-card">
                   <div className="card">
-                    <Image src="/images/titanium.png" className="card-img-top" alt="Titanium" width={300} height={200} />
+                    <Image src="/images/titanium.png" className="card-img-top" alt="Titanium" width={300} height={100} />
                     <div className="card-body">
                       <h5 className="card-title">Titanium Precision<hr /></h5>
                       <p className="card-text">Pushing the boundaries of precision engineering with advanced techniques for titanium components.</p>
@@ -271,7 +302,7 @@ export default function Home() {
               <div className="col-md-3 col-lg-3">
                 <div className="material-card">
                   <div className="card">
-                    <Image src="/images/plastic.png" className="card-img-top" alt="Gun Metal" width={300} height={200} />
+                    <Image src="/images/plastic.png" className="card-img-top" alt="Gun Metal" width={300} height={100} />
                     <div className="card-body">
                       <h5 className="card-title">Gun Metal<hr /></h5>
                       <p className="card-text">Delivering robust, corrosion-resistant components with precision machining of gun metal — a trusted alloy renowned for its strength, durability, and excellent machinability.</p>
@@ -332,7 +363,7 @@ export default function Home() {
             <div className="col-md-4 col-lg-4">
               <div className="machining_box3">
                 <h1>Precision Press Braking</h1>
-                <p>Our Amada press brakes allow us to shape and form high-quality sheet metal components with exceptional accuracy and consistency.</p>
+                <p>Our Amada press brakes allow us to efficiently shape and form high-quality sheet metal components with exceptional accuracy and consistency.</p>
               </div>
             </div>
           </div>
@@ -343,7 +374,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <Image src="/images/quality1.png" alt="Quality" width={400} height={300} />
+              <Image src="/images/quality1.png" alt="Quality" width={400} height={400} />
             </div>
             <div className="col-md-7 align-self-center">
               <h2>QUALITY ASSURANCE</h2>
@@ -375,20 +406,20 @@ export default function Home() {
           </div>
           <div className="row">
             <div className="col-md-4">
-              <div className="clients_box">
-                <Image src="/images/world.png" alt="World" width={120} height={120} />
-                <p>Our client base <br /> extends across Europe, with partners like SRM AG in Switzerland, Apium AG in Germany,<br /> and Krones AG, also  <br />in Germany.</p>
+              <div className="clients_box align-self-center">
+                <Image src="/images/world.png" alt="World" width={120} height={80} />
+                <p>Our client base extends across Europe, with partners like SRM AG in Switzerland, Apium AG in Germany, and Krones AG, also in Germany.</p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="clients_box">
-                <Image src="/images/sector.png" alt="Sector" width={120} height={120} />
+                <Image src="/images/sector.png" alt="Sector" width={120} height={80} />
                 <p>We proudly serve clients in a wide range of sectors, including automotive (JCB India), medical technology (SOTAX India), and cable manufacturing (Shree Ambika Cable).</p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="clients_box">
-                <Image src="/images/partner.png" alt="Partner" width={120} height={120} />
+                <Image src="/images/partner.png" alt="Partner" width={120} height={100} />
                 <p>We collaborate closely with leading Indian companies such as Trafag Controls, Buchi Operations India, Perto India, Vibrant Technik, and Indo Auto Tech.</p>
               </div>
             </div>
