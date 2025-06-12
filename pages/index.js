@@ -116,111 +116,112 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* SERVICES SECTION */}
-      <section className="services">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <h1>Comprehensive Services</h1>
-              <p>Situated in Mahindra World City, Jaipur, RS India has grown to serve diverse industries nationwide.</p>
-            </div>
-          </div>
-          <div className="row">
-            {/* Machining Card */}
-            <div className="col-md-3 col-lg-3">
-              <div className="service-box">
-                <div className="card">
-                  <Image src="/images/machining.png" className="card-img-top" alt="Machining" width={300} height={200} />
-                  <div className="card-body">
-                    <h5 className="card-title">Machining</h5>
-                    <ul>
-                      <li>Raw Material Preparation</li>
-                      <li>Milling</li>
-                      <li>Turning</li>
-                      <li>Swiss Type Turning</li>
-                      <li>Grinding</li>
-                    </ul>
-                    <p className="card-text">Our state-of-the-art machining capabilities include raw material preparation, milling, turning, Swiss-type turning, and precision grinding to create complex, high-quality components.</p>
-                    <div className="col-md-12 ">
-                      <div className="arrow-btn">
-                        <Link href="/machining" className="text-end"><i className="fa fa-arrow-right"></i></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Fabrication Card */}
-            <div className="col-md-3 col-lg-3">
-              <div className="service-box">
-                <div className="card">
-                  <Image src="/images/fabrication.png" className="card-img-top" alt="Fabrication" width={300} height={200} />
-                  <div className="card-body">
-                    <h5 className="card-title">Fabrication</h5>
-                    <ul>
-                      <li>Sheet Metal & Laser Cutting</li>
-                      <li>Welding</li>
-                      <li>Washing & Tumbling</li>
-                    </ul>
-                    <p className="card-text">Our advanced fabrication capabilities include sheet metal fabrication, laser cutting, precision welding, and thorough washing and tumbling processes — all designed to deliver complex, high-quality components with exceptional accuracy and finish.</p>
-                    <div className="col-md-12 ">
-                      <div className="arrow-btn">
-                        <Link href="/fabrication" className="text-end"><i className="fa fa-arrow-right"></i></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Surface Treatment Card */}
-            <div className="col-md-3 col-lg-3">
-              <div className="service-box">
-                <div className="card">
-                  <Image src="/images/finishing.png" className="card-img-top" alt="Surface Treatment" width={300} height={200} />
-                  <div className="card-body">
-                    <h5 className="card-title">Surface Treatment</h5>
-                    <ul>
-                      <li>Heat Treatment</li>
-                      <li>Powder & Paint Coating</li>
-                      <li>Laser Engraving & UV Printing</li>
-                    </ul>
-                    <p className="card-text">Our finishing capabilities span heat treatment, surface treatment, powder and paint coating, as well as laser engraving and UV printing to ensure the highest standards of quality and aesthetics.</p>
-                    <div className="col-md-12 ">
-                      <div className="arrow-btn">
-                        <Link href="/finishing" className="text-end"><i className="fa fa-arrow-right"></i></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Assembly Card */}
-            <div className="col-md-3 col-lg-3">
-              <div className="service-box">
-                <div className="card">
-                  <Image src="/images/assembly.png" className="card-img-top" alt="Assembly" width={300} height={200} />
-                  <div className="card-body">
-                    <h5 className="card-title">Assembly</h5>
-                    <ul>
-                      <li>Mechanical Fittings</li>
-                      <li>Electrical Integration</li>
-                      <li>Wiring</li>
-                      <li>PCB Mounting</li>
-                      <li>Functional Testing</li>
-                    </ul>
-                    <p className="card-text">Our comprehensive assembly capabilities cover mechanical fittings, electrical integration, wiring, PCB mounting, and functional testing — ensuring fully integrated, reliable, and performance-ready assemblies tailored to customer specifications.</p>
-                    <div className="col-md-12 ">
-                      <div className="arrow-btn">
-                        <Link href="/assembly" className="text-end"><i className="fa fa-arrow-right"></i></Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+     <section className="services">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-12 text-center">
+        <h1>Comprehensive Services</h1>
+        <p>Situated in Mahindra World City, Jaipur, RS India has grown to serve diverse industries nationwide.</p>
+      </div>
+    </div>
+
+    {/* Top Row: Card 1 & Card 4 */}
+    <div className="row">
+      {/* Card 1 - Machining */}
+      <div className="col-md-6 col-lg-6">
+        <div className="service-box">
+          <div className="card">
+            <Image src="/images/machining.png" className="card-img-top" alt="Machining" width={300} height={400} />
+            <div className="card-body">
+              <h5 className="card-title">Machining</h5>
+              <ul>
+                <li>Raw Material Preparation</li>
+                <li>Milling</li>
+                <li>Turning</li>
+                <li>Swiss Type Turning</li>
+                <li>Grinding</li>
+              </ul>
+              <p className="card-text">Our state-of-the-art machining capabilities include raw material preparation, milling, turning, Swiss-type turning, and precision grinding to create complex, high-quality components with exceptional accuracy, consistency, and performance.</p>
+              <div className="arrow-btn text-end">
+                <Link href="/machining"><i className="fa fa-arrow-right"></i></Link>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Card 4 - Assembly */}
+      <div className="col-md-6 col-lg-6">
+        <div className="service-box">
+          <div className="card">
+            <Image src="/images/assembly.png" className="card-img-top" alt="Assembly" width={300} height={200} />
+            <div className="card-body">
+              <h5 className="card-title">Assembly</h5>
+              <ul>
+                <li>Mechanical Fittings</li>
+                <li>Electrical Integration</li>
+                <li>Wiring</li>
+                <li>PCB Mounting</li>
+                <li>Functional Testing</li>
+              </ul>
+              <p className="card-text">Our comprehensive assembly capabilities cover mechanical fittings, electrical integration, wiring, PCB mounting, and functional testing — ensuring fully integrated, reliable, and performance-ready assemblies tailored to customer specifications.</p>
+              <div className="arrow-btn text-end">
+                <Link href="/assembly"><i className="fa fa-arrow-right"></i></Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Bottom Row: Card 2 & Card 3 */}
+    <div className="row">
+      {/* Card 2 - Fabrication */}
+      <div className="col-md-6 col-lg-6">
+        <div className="service-box">
+          <div className="card">
+            <Image src="/images/fabrication.png" className="card-img-top" alt="Fabrication" width={300} height={200} />
+            <div className="card-body">
+              <h5 className="card-title">Fabrication</h5>
+              <ul>
+                <li>Sheet Metal & Laser Cutting</li>
+                <li>Welding</li>
+                <li>Washing & Tumbling</li>
+              </ul>
+              <p className="card-text">Our advanced fabrication capabilities include sheet metal fabrication, laser cutting, precision welding, and thorough washing and tumbling processes — all designed to deliver complex, high-quality components with exceptional accuracy and finish.</p>
+              <div className="arrow-btn text-end">
+                <Link href="/fabrication"><i className="fa fa-arrow-right"></i></Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Card 3 - Surface Treatment */}
+      <div className="col-md-6 col-lg-6">
+        <div className="service-box">
+          <div className="card">
+            <Image src="/images/finishing.png" className="card-img-top" alt="Surface Treatment" width={300} height={200} />
+            <div className="card-body">
+              <h5 className="card-title">Surface Treatment</h5>
+              <ul>
+                <li>Heat Treatment</li>
+                <li>Powder & Paint Coating</li>
+                <li>Laser Engraving & UV Printing</li>
+              </ul>
+              <p className="card-text">Our finishing capabilities span heat treatment, surface treatment, powder and paint coating, as well as laser engraving and UV printing to ensure the highest standards of quality, durability, and visual aesthetics across all projects.</p>
+              <div className="arrow-btn text-end">
+                <Link href="/finishing"><i className="fa fa-arrow-right"></i></Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
       {/* MATERIALS EXPERTISE SECTION */}
       <section className="materials" id="materials-expertise">
         <div className="container">
